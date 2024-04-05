@@ -53,8 +53,8 @@ db = mongo_client["Missing_child"]
 
 cloudinary.config(
     cloud_name="dognhm5vd",
-    api_key="957236922523751",
-    api_secret="W5bweTgdJxh1aEtKvEiVEo5_hIo",
+    api_key="#your api_key",
+    api_secret="#your secret kery",
 )
 # firebase_config = {
 #     'apiKey': firebase_api_key,
@@ -62,14 +62,12 @@ cloudinary.config(
 #     'projectId': firebase_project_id
 # }
 firebase_config = {
-    "apiKey": "AIzaSyDqeKADnaDw3WY3e4asTUBcuLUviU24Fow",
+    "apiKey": "your-api key",
     "authDomain": "child-missing-1.firebaseapp.com",
-    "databaseURL": "https://child-missing-1-default-rtdb.firebaseio.com",
+    "databaseURL": "your db_url",
     "projectId": "child-missing-1",
     "storageBucket": "child-missing-1.appspot.com",
-    "messagingSenderId": "427714578606",
-    "appId": "1:427714578606:web:77ba406393730feac5453f",
-    "measurementId": "G-18YTPER52K",
+    #paste your json config from google 
 }
 firebase = pyrebase.initialize_app(firebase_config)
 auth = firebase.auth()
